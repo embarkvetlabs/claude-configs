@@ -31,6 +31,38 @@ Use `~/dev/ai/` as persistent storage for context, decisions, and working docume
 
 Write to this folder proactively — capture context that would help future sessions: decisions made and why, architecture notes, things learned about the codebase, open questions, investigation findings. This persists across conversations and helps Claude (and Paul) pick up where things left off.
 
+## Cross-repo references
+
+All repos live under `~/dev/`. When Paul mentions another repo by name, read files directly from its local path — don't ask for a GitHub link. You can read, grep, and glob any repo without switching the working directory.
+
+```
+~/dev/
+├── embarkvet-app/              # Main web application (TypeScript/React)
+├── projectaussie.com/          # Project Aussie frontend
+├── customer-admin/             # Internal admin tool
+├── customer-results-service/   # Customer results API
+├── pawsit-results-service/     # Pawsit results API
+├── emailer-service/            # Email service
+├── logistics-service/          # Logistics service
+├── mammal-management-service/  # Mammal management API
+├── sample-service/             # Sample processing service
+├── dogChatApi/                 # Dog chat API
+├── care-plan-generator/        # Care plan generation
+├── epigenetics-backend/        # Epigenetics API
+├── feature-flags/              # Feature flag service
+├── secrets-manager/            # Secrets management
+├── pets-mesh/                  # Service mesh
+├── scale-common-tooling/       # Shared tooling/libraries
+├── airflow-platform/           # Airflow data pipelines
+├── web-platform-database-sync/ # DB sync tooling
+├── embark-mobile-app/          # Mobile app
+├── puppy-express/              # Puppy Express service
+├── claude-configs/             # This repo (Claude Code config)
+└── ai/                         # AI working documents (per-repo context)
+```
+
+Example: "check how auth works in customer-results-service" → read files from `~/dev/customer-results-service/` directly.
+
 ---
 
 # Rules
