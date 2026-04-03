@@ -26,13 +26,16 @@ Shared configuration files for [Claude Code](https://docs.anthropic.com/en/docs/
 ├── commands/
 │   ├── ralph-slice-epic.md
 │   ├── review-pr.md
+│   ├── start.md
 │   └── statusline-command.sh
 ├── hooks/
 │   ├── post-edit-check.sh
 │   └── README.md
 └── skills/
     ├── git/SKILL.md
-    └── owasp/SKILL.md
+    ├── owasp/SKILL.md
+    ├── python/SKILL.md
+    └── typescript/SKILL.md
 ```
 
 ## Setup on a New Machine
