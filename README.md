@@ -24,12 +24,18 @@ Shared configuration files for [Claude Code](https://docs.anthropic.com/en/docs/
 │   ├── tech-research-specialist.md
 │   └── writer.md
 ├── commands/
-│   ├── ralph-slice-epic.md
-│   ├── review-pr.md
-│   ├── start.md
-│   └── statusline-command.sh
+│   ├── capture.md          # /capture — save session learnings to ~/dev/ai/
+│   ├── init-repo.md        # /init-repo — generate CLAUDE.md for a repo
+│   ├── ralph-slice-epic.md # /ralph-slice-epic — stacked PR decomposer
+│   ├── review-pr.md        # /review-pr — multi-perspective PR review
+│   ├── start.md            # /start — begin a new feature with questions + plan
+│   ├── statusline-command.sh
+│   ├── team-debug.md       # /team-debug — parallel bug investigation team
+│   ├── team-feature.md     # /team-feature — feature implementation team
+│   └── test.md             # /test — run tests scoped to recent changes
 ├── hooks/
-│   ├── post-edit-check.sh
+│   ├── post-edit-check.sh  # Per-file lint on every edit (biome/eslint/ruff)
+│   ├── stop-typecheck.sh   # Full project typecheck when Claude finishes (tsc/mypy)
 │   └── README.md
 └── skills/
     ├── git/SKILL.md

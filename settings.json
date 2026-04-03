@@ -183,6 +183,17 @@
           }
         ]
       }
+    ],
+    "Stop": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/stop-typecheck.sh"
+          }
+        ]
+      }
     ]
   },
   "statusLine": {
