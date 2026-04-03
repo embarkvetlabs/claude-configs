@@ -166,9 +166,16 @@
       "// ── Secrets ──",
       "Read(./.env)",
       "Read(./.env.*)",
-      "// ── Noise ──",
+      "Read(./.env.local)",
+      "Read(**/.env)",
+      "Read(**/.env.*)",
+      "// ── Noise (installed packages, bytecode) ──",
       "Read(**/node_modules/**)",
-      "Read(node_modules/**)"
+      "Read(node_modules/**)",
+      "Read(**/.venv/**)",
+      "Read(**/venv/**)",
+      "Read(**/.virtualenv/**)",
+      "Read(**/__pycache__/**)"
     ]
   },
   "model": "sonnet[1m]",
