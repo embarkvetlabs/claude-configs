@@ -33,33 +33,32 @@ Write to this folder proactively — capture context that would help future sess
 
 ## Cross-repo references
 
-All repos live under `~/dev/`. When Paul mentions another repo by name, read files directly from its local path — don't ask for a GitHub link. You can read, grep, and glob any repo without switching the working directory.
+All repos live under `~/dev/`. When Paul mentions a repo by name or alias, read files directly from its local path — don't ask for a GitHub link. You can read, grep, and glob any repo without switching the working directory.
 
-```
-~/dev/
-├── embarkvet-app/              # Main web application (TypeScript/React)
-├── projectaussie.com/          # Project Aussie frontend
-├── customer-admin/             # Internal admin tool
-├── customer-results-service/   # Customer results API
-├── pawsit-results-service/     # Pawsit results API
-├── emailer-service/            # Email service
-├── logistics-service/          # Logistics service
-├── mammal-management-service/  # Mammal management API
-├── sample-service/             # Sample processing service
-├── dogChatApi/                 # Dog chat API
-├── care-plan-generator/        # Care plan generation
-├── epigenetics-backend/        # Epigenetics API
-├── feature-flags/              # Feature flag service
-├── secrets-manager/            # Secrets management
-├── pets-mesh/                  # Service mesh
-├── scale-common-tooling/       # Shared tooling/libraries
-├── airflow-platform/           # Airflow data pipelines
-├── web-platform-database-sync/ # DB sync tooling
-├── embark-mobile-app/          # Mobile app
-├── puppy-express/              # Puppy Express service
-├── claude-configs/             # This repo (Claude Code config)
-└── ai/                         # AI working documents (per-repo context)
-```
+| Alias | Repo path | Description |
+|-------|-----------|-------------|
+| app | ~/dev/embarkvet-app/ | Main web application (TypeScript/React) |
+| aussie | ~/dev/projectaussie.com/ | Project Aussie frontend |
+| admin | ~/dev/customer-admin/ | Internal admin tool |
+| CRS | ~/dev/customer-results-service/ | Customer results API |
+| PRS | ~/dev/pawsit-results-service/ | Pawsit results API |
+| emailer | ~/dev/emailer-service/ | Email service |
+| logistics | ~/dev/logistics-service/ | Logistics service |
+| MMS | ~/dev/mammal-management-service/ | Mammal management API |
+| samples | ~/dev/sample-service/ | Sample processing service |
+| dogchat | ~/dev/dogChatApi/ | Dog chat API |
+| careplan | ~/dev/care-plan-generator/ | Care plan generation |
+| epi | ~/dev/epigenetics-backend/ | Epigenetics API |
+| flags | ~/dev/feature-flags/ | Feature flag service |
+| secrets | ~/dev/secrets-manager/ | Secrets management |
+| mesh | ~/dev/pets-mesh/ | Service mesh |
+| tooling | ~/dev/scale-common-tooling/ | Shared tooling/libraries |
+| airflow | ~/dev/airflow-platform/ | Airflow data pipelines |
+| dbsync | ~/dev/web-platform-database-sync/ | DB sync tooling |
+| mobile | ~/dev/embark-mobile-app/ | Mobile app |
+| puppy | ~/dev/puppy-express/ | Puppy Express service |
+
+Example: "check how MMS handles auth" → read from `~/dev/mammal-management-service/`. "compare CRS and PRS routes" → read from both.
 
 Example: "check how auth works in customer-results-service" → read files from `~/dev/customer-results-service/` directly.
 

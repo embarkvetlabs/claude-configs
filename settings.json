@@ -1,6 +1,11 @@
 {
   "env": {
-    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1",
+    "DEV": "/Users/pauldarragh/dev",
+    "MMS": "/Users/pauldarragh/dev/mammal-management-service",
+    "CRS": "/Users/pauldarragh/dev/customer-results-service",
+    "PRS": "/Users/pauldarragh/dev/pawsit-results-service",
+    "APP": "/Users/pauldarragh/dev/embarkvet-app"
   },
   "permissions": {
     "allow": [
